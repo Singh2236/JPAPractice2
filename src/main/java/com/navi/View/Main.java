@@ -1,4 +1,6 @@
-package com.navi.controller;
+package com.navi.View;
+
+import com.navi.Model.Employee;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -13,8 +15,13 @@ public class Main {
 
         try {
             transaction.begin();
-            
 
+            Employee employee = new Employee();
+            employee.setName("Navpreet");
+            employee.setDesignation("HR");
+            employee.setSalary("45000");
+
+            entityManager.persist(employee);
             transaction.commit();
         } finally {
             if (transaction.isActive()) {
