@@ -9,6 +9,10 @@
         <class>com.navi.Model.Cars</class>
         <class>com.navi.Model.Employee</class>
 
+
+        <!-- eclipse link is the jpa
+        jpa using mysql driver to communicate with the database
+        with jpa you don't need to write the sql queries, but we have some extra methods to do the same-->
         <properties>
             <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/mydatabase"/>
             <property name="eclipselink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
